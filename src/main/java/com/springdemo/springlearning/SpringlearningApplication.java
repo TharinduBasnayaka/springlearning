@@ -13,6 +13,8 @@ public class SpringlearningApplication {
 
 		FirstTestingService firstTestingService = context.getBean(FirstTestingService.class);
 		System.out.println(firstTestingService.loadBeanFromClass());
+		System.out.println(firstTestingService.readFromTheApplicationProperties());
+		System.out.println(firstTestingService.getCustomPropertyFromAnotherFile());
 	}
 
 
