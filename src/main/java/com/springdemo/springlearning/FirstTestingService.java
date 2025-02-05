@@ -38,8 +38,9 @@ public class FirstTestingService {
 
     /**Setter injection**/
     private FirstTestingClass firstTestingClass;
+
     @Autowired
-    public void setFirstTestingClass( @Qualifier("bean2") FirstTestingClass firstTestingClass){
+    public void setFirstTestingClass( @Qualifier("bean1") FirstTestingClass firstTestingClass){
         this.firstTestingClass = firstTestingClass;
     }
     /**setter injection ends**/
